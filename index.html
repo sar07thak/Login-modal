@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+<!-- global-container -->
+    <div class="bg-rose-50 flex items-center justify-center min-h-screen">
+        <!-- main-container -->
+        <div class= " relative rounded-2xl shadow-2xl bg-white flex flex-col md:flex-row mx-10  "> 
+            <!-- first-column -->
+            <div class="flex flex-col p-10 md:p-20">
+                <!-- heading -->
+            <h1 class="font-mono text-4xl font-bold mb-6">Log In</h1>
+            <!-- discription -->
+            <h2 class="text-gray-600 font-sans  mb-12">Log in to your account to upload or download pictures,<br> videos or music.</h2>
+            <!-- placeholder -->
+            <input
+            type="text" placeholder="Enter your email address"
+            class="text-left border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light w-full p-6 ">
+            <!-- enter -->
+            <div class="flex flex-col md:flex-row  md:justify-between   md:mt-6">
+                <span class=" pr-10 py-6 rounded-md font-thin text-cyan-700 text-center md:text-left">Forgot password</span>
+                <!-- next -->
+                <button class="flex border px-12 py-6 rounded-md text-white bg-cyan-700 hover:-translate-y-0.5 duration-200 hover:shadow-lg justify-center">
+                    <span class="pr-3 font-medium ">Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="px-4 h-6 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      
+                </button>
+            </div>
+            <div class=" border-b border-b-gray-300 mt-12"></div>
+            <div class="text-center py-6 text-sm text-gray-400">or log in with</div>
+            <div class="flex flex-col justify-between md:flex-row space-y-4 md:space-y-0">
+                <!-- facebook -->
+                <button class="font-thin items-center  flex space-x-3 border py-3 px-7 text-gray-600 rounded-md hover:translate-y-1 duration-200 hover:shadow-lg">
+                    <img src="../images/facebook.png" class="w-9" alt="">
+                 <span>Facebook</span>
+                </button>
+                <!-- Google -->
+                <button class="font-thin items-center  flex space-x-3 border py-3 px-7 text-gray-600 rounded-md hover:translate-y-1 duration-200 hover:shadow-lg">
+                    <img src="../images/google.png" class="w-9" alt="">
+                 <span>Google</span>
+                </button>
+            </div>
+            </div>
+            <!-- second-column -->
+            <div>
+                <img src="../images/image.jpg"
+                class="w-[430px] hidden md:block" alt="">
+                
+                <!-- close button -->
+                <!-- <div class="absolute top-6 right-3 flex justify-center p-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                      
+                </div> -->
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
